@@ -3,124 +3,100 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>NxtWave GTM · 1,000 AI-native FDEs · India first, US next</title>
-<meta name="description" content="Go-to-market plan to place 1,000 NxtWave / NIAT engineers as AI-native Forward Deployed Engineers in 6 months. India-first, GCC-led, US next." />
+<title>NxtWave GTM Motion · Find, open, convert, execute</title>
+<meta name="description" content="The GTM motion for placing NIAT engineers as AI-native FDEs, in four slides: find, open, convert, execute." />
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@500;600&display=swap');
 
   :root{
-    --bg:#E9F1FB; --bg-alt:#F4F8FE; --card:#FFFFFF; --card-2:#F7FAFE;
-    --line:#D2E0F1; --line-soft:#E3EBF6; --track:#DCE6F4;
-    --text:#132540; --muted:#53637E; --dim:#7E8EA8;
-    --cool:#2F62DD; --cool-soft:#6D93F0; --cool-tint:#E7EEFB;
-    --warm:#C0781C; --warm-soft:#E4972F; --warm-tint:#FBEEDA;
+    --bg:#EAF1FF; --card:#FFFFFF; --card-2:#F5F8FF;
+    --line:#D5E1F7; --line-soft:#E7EEFB; --track:#DEE8FA;
+    --text:#101E38; --muted:#4E5E7C; --dim:#7C8CA8;
+    --blue:#3D6EF5; --blue-soft:#7E9DFF; --blue-tint:#E7EDFF;
+    --orange:#F97316; --orange-soft:#FDA968; --orange-tint:#FFEBD9;
+    --violet:#7C5CFC; --violet-soft:#AB92FF; --violet-tint:#EEE9FF;
+    --teal:#0FB8A6; --teal-soft:#5AD6C8; --teal-tint:#DAF6F2;
     --display:'Plus Jakarta Sans',system-ui,sans-serif;
     --body:'Inter',system-ui,sans-serif;
     --mono:'IBM Plex Mono',ui-monospace,monospace;
     --serif:'Source Serif 4',Georgia,serif;
-    --wrap:1080px;
-    --pad:100px;        /* uniform section padding */
-    --gap:24px;         /* uniform grid gap */
-    --head-mb:48px;     /* uniform section-head spacing */
-    --cardpad:28px;     /* uniform card padding */
-    --shadow:0 1px 2px rgba(19,37,64,.05),0 12px 30px rgba(19,37,64,.06);
-    --shadow-sm:0 1px 2px rgba(19,37,64,.05),0 5px 16px rgba(19,37,64,.05);
+    --wrap:1080px; --pad:96px; --gap:24px; --head-mb:44px; --cardpad:28px; --block:66px;
+    --shadow:0 1px 2px rgba(16,30,56,.06),0 14px 34px rgba(16,30,56,.08);
+    --shadow-sm:0 1px 2px rgba(16,30,56,.05),0 6px 18px rgba(16,30,56,.06);
   }
-
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;scroll-padding-top:72px}
   body{
-    margin:0;background:var(--bg);color:var(--text);
-    font-family:var(--body);line-height:1.6;text-align:left;
+    margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.6;text-align:left;
     -webkit-font-smoothing:antialiased;
-    background-image:radial-gradient(900px 520px at 84% -10%, rgba(47,98,221,.10), transparent 60%),
-                     radial-gradient(760px 480px at -8% 4%, rgba(201,120,26,.06), transparent 55%);
+    background-image:radial-gradient(820px 500px at 86% -8%, rgba(61,110,245,.14), transparent 60%),
+                     radial-gradient(680px 460px at -6% 2%, rgba(249,115,22,.10), transparent 55%),
+                     radial-gradient(760px 520px at 40% 108%, rgba(124,92,252,.10), transparent 60%);
     background-attachment:fixed;
   }
   body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-    background-image:linear-gradient(rgba(47,98,221,.07) 1px,transparent 1px),
-                     linear-gradient(90deg,rgba(47,98,221,.07) 1px,transparent 1px);
+    background-image:linear-gradient(rgba(61,110,245,.07) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(61,110,245,.07) 1px,transparent 1px);
     background-size:46px 46px}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
 
-  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--cool);margin:0}
-  .eyebrow.warm{color:var(--warm)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:0}
+  .subeye{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 20px;color:var(--muted)}
+  .subeye.blue{color:var(--blue)}.subeye.violet{color:var(--violet)}.subeye.orange{color:var(--orange)}.subeye.teal{color:var(--teal)}
 
-  /* NAV */
-  header.nav{position:fixed;inset:0 0 auto 0;z-index:50;backdrop-filter:blur(12px);
-    background:rgba(233,241,251,.82);border-bottom:1px solid var(--line)}
+  header.nav{position:fixed;inset:0 0 auto 0;z-index:50;backdrop-filter:blur(12px);background:rgba(234,241,255,.82);border-bottom:1px solid var(--line)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
   .brand{font-family:var(--display);font-weight:800;letter-spacing:-.01em;font-size:17px;color:var(--text)}
-  .brand b{color:var(--cool)}
-  .nav nav{display:flex;gap:18px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .brand b{color:var(--blue)}
+  .nav nav{display:flex;gap:26px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
   .nav nav a{transition:color .2s;white-space:nowrap}
-  .nav nav a:hover,.nav nav a:focus-visible{color:var(--cool)}
-  @media(max-width:820px){.nav nav{display:none}}
+  .nav nav a:hover{color:var(--blue)}
+  @media(max-width:640px){.nav nav{gap:16px;font-size:11.5px}}
 
-  /* SECTION RHYTHM */
-  section{padding:var(--pad) 0;border-top:1px solid var(--line-soft);position:relative;background:transparent}
-  section.alt{background:rgba(255,255,255,.55)}
+  .slide{padding:var(--pad) 0;border-top:1px solid var(--line-soft);position:relative}
+  .slide.alt{background:rgba(255,255,255,.55)}
+  .slide:first-of-type{border-top:none}
   .sec-head{max-width:66ch;margin-bottom:var(--head-mb)}
   .sec-head .eyebrow{margin-bottom:14px}
-  h2{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.08;
-    font-size:clamp(26px,4vw,40px);margin:0 0 14px;color:var(--text)}
-  h2 .warm{color:var(--warm);font-style:italic}
-  h2 .cool{color:var(--cool);font-style:italic}
+  h2{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.08;font-size:clamp(28px,4.4vw,44px);margin:0 0 14px;color:var(--text)}
+  .a-blue{color:var(--blue);font-style:italic}.a-orange{color:var(--orange);font-style:italic}
+  .a-violet{color:var(--violet);font-style:italic}.a-teal{color:var(--teal);font-style:italic}
   .sec-head p{color:var(--muted);margin:0;font-size:16px}
+  .block{margin-top:var(--block)}
 
-  /* HERO */
-  .hero{padding:132px 0 var(--pad);border-top:none}
+  .slide.hero{padding-top:130px}
   .hero .kick{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:24px}
-  .pill{font-family:var(--mono);font-size:11.5px;letter-spacing:.10em;text-transform:uppercase;
-    border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--muted);background:var(--card)}
-  h1{font-family:var(--display);font-weight:800;letter-spacing:-.03em;line-height:1.02;
-    font-size:clamp(37px,7vw,72px);margin:0 0 24px;color:var(--text)}
-  h1 .warm{color:var(--warm)} h1 .cool{color:var(--cool)}
+  .pill{font-family:var(--mono);font-size:11.5px;letter-spacing:.10em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--muted);background:var(--card);animation:floaty 5s ease-in-out infinite}
+  .pill:nth-child(2){animation-delay:.7s}.pill:nth-child(3){animation-delay:1.4s}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+  h1{font-family:var(--display);font-weight:800;letter-spacing:-.03em;line-height:1.03;font-size:clamp(34px,6.2vw,64px);margin:0 0 22px;color:var(--text)}
+  h1 .c-blue{color:var(--blue)}h1 .c-orange{color:var(--orange)}h1 .c-violet{color:var(--violet)}
   .lede{font-size:clamp(16px,2.1vw,20px);color:var(--muted);max-width:62ch;margin:0}
   .lede b{color:var(--text);font-weight:600}
 
-  /* STATS */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);
-    border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:52px;box-shadow:var(--shadow)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:48px;box-shadow:var(--shadow)}
   .stat{background:var(--card);padding:26px 22px}
-  .stat .num{font-family:var(--display);font-weight:800;font-size:clamp(30px,4.6vw,46px);letter-spacing:-.03em;line-height:1;color:var(--text)}
+  .stat .num{font-family:var(--display);font-weight:800;font-size:clamp(30px,4.6vw,46px);letter-spacing:-.03em;line-height:1}
+  .n-blue{color:var(--blue)}.n-orange{color:var(--orange)}.n-violet{color:var(--violet)}.n-teal{color:var(--teal)}
   .stat .lab{font-family:var(--mono);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--dim);margin-top:10px}
   @media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
 
-  /* CARD BASICS */
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-sm)}
 
-  /* CATEGORY TABLE */
-  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow-sm)}
-  table{border-collapse:collapse;width:100%;min-width:660px}
-  th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;font-size:14px}
-  th{font-family:var(--mono);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--cool-tint)}
-  td{color:var(--muted)}
-  td:first-child{font-family:var(--display);font-weight:700;color:var(--text);white-space:nowrap}
-  tbody tr:last-child td{border-bottom:none}
-  td .exp{color:var(--warm)}
-  .callout{margin-top:var(--gap);border:1px solid var(--line);border-left:3px solid var(--cool);
-    background:var(--card);border-radius:12px;padding:22px 24px;box-shadow:var(--shadow-sm)}
-  .callout .big{font-family:var(--display);font-size:clamp(18px,2.6vw,23px);font-weight:700;letter-spacing:-.01em;margin:0 0 8px;color:var(--text)}
-  .callout p{margin:0;color:var(--muted);font-size:15px}
-  .lessons{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);margin-top:var(--gap)}
-  .lesson{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:var(--card)}
-  .lesson .n{font-family:var(--mono);font-size:12px;color:var(--dim)}
-  .lesson p{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
-  .lesson b{color:var(--text)}
-  @media(max-width:640px){.lessons{grid-template-columns:1fr}}
-
-  /* TWO MARKET SPLIT */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
   .col{border:1px solid var(--line);border-radius:16px;padding:var(--cardpad);background:var(--card);box-shadow:var(--shadow-sm)}
-  .col.india{border-top:3px solid var(--warm)} .col.us{border-top:3px solid var(--cool)}
+  .col.india{border-top:3px solid var(--orange)}.col.us{border-top:3px solid var(--blue)}
   .col h3{font-family:var(--display);font-size:22px;margin:10px 0 8px;font-weight:700;letter-spacing:-.01em;color:var(--text)}
+  .col .eyebrow.warm{color:var(--orange)}
   .col .share{font-family:var(--mono);font-size:12px;color:var(--dim);margin-top:14px}
   .col p{margin:0;color:var(--muted);font-size:15px}
   @media(max-width:640px){.split{grid-template-columns:1fr}}
+  .testbox{margin-top:var(--gap);border:1px solid var(--line);border-left:3px solid var(--violet);background:var(--card);border-radius:12px;padding:22px 24px;box-shadow:var(--shadow-sm)}
+  .testbox .big{font-family:var(--display);font-weight:700;font-size:clamp(18px,2.4vw,22px);color:var(--text);margin:0 0 8px;letter-spacing:-.01em}
+  .testbox p{margin:0;color:var(--muted);font-size:15px}
+  .testbox b{color:var(--violet)}
 
-  /* FUNNEL */
   .funnel-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
   .funnel-svg{width:100%;height:auto;display:block}
   .fband polygon{transform:scaleX(0);transform-box:fill-box;transform-origin:center;transition:transform .8s cubic-bezier(.22,1,.36,1)}
@@ -130,7 +106,7 @@
   .reveal.in .fband:nth-of-type(4) polygon{transition-delay:.24s}
   .reveal.in .fband:nth-of-type(5) polygon{transition-delay:.32s}
   .fband{transition:opacity .22s ease;cursor:default}
-  .funnel-svg.dim .fband:not(.active){opacity:.42}
+  .funnel-svg.dim .fband:not(.active){opacity:.4}
   .fpct{font-family:var(--mono);font-size:12px;text-anchor:middle;font-weight:500}
   .fnum{font-family:var(--serif);font-size:29px;font-weight:600;fill:var(--text)}
   .fdesc{font-family:var(--mono);font-size:12.5px;fill:var(--muted)}
@@ -140,10 +116,10 @@
   .multiply .mline{margin-top:8px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
   .multiply .big{font-family:var(--serif);font-size:42px;font-weight:600;color:var(--text);line-height:1}
   .multiply .mm{font-family:var(--mono);font-size:14px;color:var(--muted)}
-  .multiply .res{font-family:var(--serif);font-size:34px;font-weight:600;color:var(--cool);margin-top:8px}
+  .multiply .res{font-family:var(--serif);font-size:32px;font-weight:600;color:var(--blue);margin-top:8px}
+  .multiply .mfoot{font-family:var(--mono);font-size:12px;color:var(--dim);margin-top:10px}
   @media(max-width:760px){.funnel-grid{grid-template-columns:1fr;gap:28px}}
 
-  /* MARKETS BARS */
   .bars{display:flex;flex-direction:column;gap:22px}
   .bar .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;gap:16px}
   .bar .name{font-family:var(--display);font-weight:700;font-size:17px;color:var(--text)}
@@ -151,14 +127,18 @@
   .bar .pct{font-family:var(--mono);font-size:15px;color:var(--muted)}
   .track{height:12px;border-radius:999px;background:var(--track);overflow:hidden}
   .fill{height:100%;width:0;border-radius:999px;transition:width 1.1s cubic-bezier(.22,1,.36,1)}
-  .fill.warm{background:linear-gradient(90deg,var(--warm),var(--warm-soft))}
-  .fill.cool{background:linear-gradient(90deg,var(--cool),var(--cool-soft))}
+  .fill.blue{background:linear-gradient(90deg,var(--blue),var(--blue-soft))}
+  .fill.violet{background:linear-gradient(90deg,var(--violet),var(--violet-soft))}
+  .fill.orange{background:linear-gradient(90deg,var(--orange),var(--orange-soft))}
+  .fill.teal{background:linear-gradient(90deg,var(--teal),var(--teal-soft))}
   .bar .why{margin:8px 0 0;color:var(--dim);font-size:13.5px}
+  .hookbox{margin-top:30px;border:1px solid var(--line);border-left:3px solid var(--orange);background:var(--card);border-radius:12px;padding:20px 24px;box-shadow:var(--shadow-sm)}
+  .hookbox .lab{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin:0 0 8px}
+  .hookbox p{margin:0;font-family:var(--mono);font-size:14px;color:var(--text);line-height:1.7}
 
-  /* RAMP CHART */
   .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card);margin-bottom:22px}
   .seg button{font-family:var(--mono);font-size:12px;padding:8px 16px;background:transparent;border:0;color:var(--muted);cursor:pointer;transition:background .2s,color .2s}
-  .seg button.on{background:var(--cool);color:#fff}
+  .seg button.on{background:var(--blue);color:#fff}
   .chart-card{padding:22px 20px 8px}
   #chart{width:100%;height:auto;display:block;overflow:visible}
   #chart .grid{stroke:var(--line-soft);stroke-width:1}
@@ -174,26 +154,25 @@
   .chanmix .key{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
   .chanmix .dot{width:11px;height:11px;border-radius:3px}
 
-  /* BETS */
   .bets{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
   .bet{border:1px solid var(--line);border-radius:16px;padding:var(--cardpad);background:var(--card);position:relative;overflow:hidden;box-shadow:var(--shadow-sm)}
-  .bet::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--cool)}
-  .bet.warm::before{background:var(--warm)}
+  .bet::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--blue)}
+  .bet.violet::before{background:var(--violet)}.bet.orange::before{background:var(--orange)}.bet.teal::before{background:var(--teal)}
   .bet .no{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--dim)}
-  .bet h3{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.01em;margin:12px 0 10px;color:var(--text)}
+  .bet h3{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01em;margin:12px 0 10px;color:var(--text)}
   .bet p{margin:0;color:var(--muted);font-size:14.5px}
-  .bet .win{margin-top:14px;font-size:14px;color:var(--text)}
-  .bet .win b{color:var(--cool);font-weight:600}
-  .bet.warm .win b{color:var(--warm)}
   @media(max-width:640px){.bets{grid-template-columns:1fr}}
+  .stack-note{margin-top:var(--gap);font-size:15px;color:var(--text);background:var(--violet-tint);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+  .stack-note b{color:var(--violet)}
 
-  /* FLYWHEEL */
   .fly-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:40px;align-items:center}
   .fly-narr{font-size:16px;color:var(--muted);margin:0;max-width:46ch}
   .fly-svg{width:100%;height:auto;display:block}
-  .fly-ring{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:4 8}
-  .fly-arc{fill:none;stroke:var(--cool);stroke-width:2.5}
-  .fly-node circle{fill:#fff;stroke:var(--cool-soft);stroke-width:1.6}
+  .fly-ring{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:4 8;transform-box:view-box;transform-origin:300px 220px;animation:flyspin 40s linear infinite}
+  .fly-sweep{fill:none;stroke:var(--blue);stroke-width:4;stroke-linecap:round;stroke-dasharray:70 715;transform-box:view-box;transform-origin:300px 220px;animation:flyspin 4.5s linear infinite}
+  @keyframes flyspin{to{transform:rotate(360deg)}}
+  .fly-arc{fill:none;stroke:#AEC4F8;stroke-width:2.5}
+  .fly-node circle{fill:#fff;stroke:var(--blue-soft);stroke-width:1.6}
   .fly-node{opacity:0;transition:opacity .55s ease}
   .reveal.in .fly-node{opacity:1}
   .reveal.in .fly-node:nth-of-type(2){transition-delay:.12s}
@@ -204,46 +183,34 @@
   .fly-cmain{font-family:var(--serif);font-size:24px;font-weight:600;fill:var(--text);text-anchor:middle}
   @media(max-width:760px){.fly-grid{grid-template-columns:1fr;gap:28px}.fly-narr{max-width:none}}
 
-  /* CREDIBILITY */
-  .cred{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--gap);align-items:start}
-  .cred .lead{font-family:var(--display);font-size:clamp(19px,2.6vw,24px);font-weight:600;letter-spacing:-.01em;line-height:1.32;margin:0;color:var(--text)}
-  .cred .lead em{color:var(--cool);font-style:italic}
-  .cred p{color:var(--muted);font-size:15px;margin:0 0 14px}
-  @media(max-width:720px){.cred{grid-template-columns:1fr}}
-
-  /* ROADMAP */
   .road{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap)}
   .step{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--card);box-shadow:var(--shadow-sm)}
   .step .ph{font-family:var(--mono);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--dim)}
   .step h4{font-family:var(--display);font-size:18px;font-weight:700;margin:10px 0 8px;color:var(--text)}
   .step p{margin:0 0 16px;color:var(--muted);font-size:13.5px}
-  .step .count{font-family:var(--display);font-weight:800;font-size:28px;letter-spacing:-.02em}
-  .step .count small{font-family:var(--mono);font-size:11px;font-weight:400;color:var(--dim);display:block;letter-spacing:.05em;text-transform:uppercase;margin-top:4px}
-  .step:nth-child(1) .count{color:var(--muted)}
-  .step:nth-child(2) .count,.step:nth-child(3) .count{color:var(--warm)}
-  .step:nth-child(4) .count{color:var(--cool)}
+  .step .tag{font-family:var(--mono);font-size:12px;font-weight:500;padding:5px 10px;border-radius:999px;display:inline-block}
+  .tag.blue{background:var(--blue-tint);color:var(--blue)}.tag.violet{background:var(--violet-tint);color:var(--violet)}
+  .tag.orange{background:var(--orange-tint);color:var(--orange)}.tag.teal{background:var(--teal-tint);color:var(--teal)}
   @media(max-width:860px){.road{grid-template-columns:1fr 1fr}}
   @media(max-width:480px){.road{grid-template-columns:1fr}}
 
-  /* FOOTER */
   footer{border-top:1px solid var(--line);padding:40px 0 52px;background:rgba(255,255,255,.55)}
   footer .wrap{text-align:center}
   .footer-line{font-family:var(--mono);font-size:13px;color:var(--muted);letter-spacing:.02em;margin:0}
-  .footer-line a{color:var(--cool)}
+  .footer-line a{color:var(--blue)}
   .footer-line a:hover{text-decoration:underline}
 
-  /* reveal + a11y */
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
   .reveal.in{opacity:1;transform:none}
-  .bet,.col,.step,.lesson{transition:transform .2s ease,box-shadow .25s ease,border-color .2s ease}
-  .bet:hover,.step:hover,.lesson:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--cool-soft)}
+  .bet,.col,.step{transition:transform .2s ease,box-shadow .25s ease,border-color .2s ease}
+  .bet:hover,.step:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--blue-soft)}
   .col:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-  :focus-visible{outline:2px solid var(--cool);outline-offset:3px;border-radius:6px}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
   @media(prefers-reduced-motion:reduce){
     *{transition:none!important;animation:none!important;scroll-behavior:auto}
     .reveal{opacity:1;transform:none}.fill{width:var(--w)!important}
-    .fband{transform:scaleX(1)!important}
-    .fly-node circle{opacity:1!important;transform:none!important}.fly-node text{opacity:1!important}
+    .fband polygon{transform:scaleX(1)!important}.fly-node{opacity:1!important}
+    .fly-sweep{display:none}
   }
 </style>
 </head>
@@ -253,189 +220,216 @@
   <div class="wrap">
     <div class="brand">NxtWave <b>GTM</b></div>
     <nav>
-      <a href="#read">Read</a>
-      <a href="#funnel">Funnel</a>
-      <a href="#markets">Markets</a>
-      <a href="#ramp">Ramp</a>
-      <a href="#bets">Bets</a>
-      <a href="#flywheel">Flywheel</a>
-      <a href="#roadmap">Roadmap</a>
+      <a href="#find">Find</a>
+      <a href="#open">Open</a>
+      <a href="#convert">Convert</a>
+      <a href="#execute">Execute</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <!-- HERO -->
-  <section class="hero">
+  <!-- SLIDE 1 : FIND -->
+  <section id="find" class="slide hero">
     <div class="wrap">
       <div class="kick reveal">
-        <span class="pill">GTM plan</span>
-        <span class="pill">India-first · GCC-led</span>
+        <span class="pill">Slide 01 · Find</span>
+        <span class="pill">India GCC + US remote</span>
         <span class="pill">6-month horizon</span>
       </div>
-      <h1 class="reveal">1,000 NIAT engineers as Forward-Deployed talent.<br><span class="warm">India first.</span> <span class="cool">US next.</span></h1>
-      <p class="lede reveal">One thesis, two markets. We open a role category the placement field is not built for, and let a working build a founder can click do the selling. <b>Proof, not profiles.</b></p>
+      <h1 class="reveal">Lead with a <span class="c-blue">working build</span>.<br>Sell a <span class="c-orange">paid trial</span>.<br>Let the work <span class="c-violet">convert</span>.</h1>
+      <p class="lede reveal">No GCC or funded AI startup hires an unknown junior off a cold email. So the motion removes the risk instead of arguing past it. Four slides: find, open, convert, execute.</p>
       <div class="stats reveal">
-        <div class="stat"><div class="num" data-target="1000">0</div><div class="lab">placements target</div></div>
-        <div class="stat"><div class="num" data-target="6">0</div><div class="lab">months</div></div>
-        <div class="stat"><div class="num" data-target="2">0</div><div class="lab">priority markets</div></div>
-        <div class="stat"><div class="num" data-target="5">0</div><div class="lab">demand channels</div></div>
+        <div class="stat"><div class="num n-blue" data-target="2">0</div><div class="lab">priority markets</div></div>
+        <div class="stat"><div class="num n-orange" data-target="200" data-prefix="~">0</div><div class="lab">live accounts (target)</div></div>
+        <div class="stat"><div class="num n-violet" data-target="2">0</div><div class="lab">week paid trial</div></div>
+        <div class="stat"><div class="num n-teal" data-target="3">0</div><div class="lab">touch cadence</div></div>
       </div>
-    </div>
-  </section>
 
-  <!-- THE READ -->
-  <section id="read" class="alt">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">The read on the category</p>
-        <h2>Don't out-place the field. <span class="cool">Open a category.</span></h2>
-        <p>Every serious India player runs the same motion: train, then push graduates into generic software roles through a hiring-partner network, with a headline placement rate as the marketing. That motion is now commoditized and cyclical. Masai's pay-after-placement model buckled in the 2023 to 2024 hiring freeze. The opening is a role none of them is built for.</p>
-      </div>
-      <div class="tablewrap reveal">
-        <table>
-          <thead><tr><th>Player</th><th>Core motion</th><th>Real edge</th><th>Where it is exposed</th></tr></thead>
-          <tbody>
-            <tr><td>Scaler</td><td>Upskill + 900 to 1,200+ hiring partners; warm referrals</td><td>Genuine employer demand; moved upmarket on role quality</td><td class="exp">Premium price; still SDE and interview-centric</td></tr>
-            <tr><td>Newton (NST)</td><td>Degree college + 800+ partners; AI IDE, build-first</td><td>Degree + freshers + AI tooling</td><td class="exp">UG placement unproven; generic SDE roles</td></tr>
-            <tr><td>Masai</td><td>Pay-after-placement (ISA), tier-2 heavy</td><td>Outcome-aligned; strong non-metro reach</td><td class="exp">ISA fragile to hiring cycles; had to pivot</td></tr>
-            <tr><td>Coding Ninjas</td><td>Affordable courses + job portal (Info Edge)</td><td>Naukri distribution</td><td class="exp">Assistance, not owned demand; commoditized</td></tr>
-            <tr><td>upGrad</td><td>University-collab, enterprise, broad</td><td>Brand + enterprise and university tie-ups</td><td class="exp">High burn; diffuse; not FDE-focused</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="callout reveal">
-        <p class="big">The Forward-Deployed Engineer is the uncontested lane.</p>
-        <p>Sold to a buyer with a structural, not cyclical, talent gap: India's GCC AI teams first, US AI startups for margin. Higher-value than SDE, and the incumbents' generic pipelines do not produce it.</p>
-      </div>
-      <div class="lessons reveal">
-        <div class="lesson"><span class="n">lesson 01</span><p><b>Partners fund placements, not students.</b> No student-side ISA, so none of Masai's financing fragility.</p></div>
-        <div class="lesson"><span class="n">lesson 02</span><p><b>Optimize for role quality and durable demand.</b> An AI skills gap that persists through downturns, not a vanity placement rate.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE BET -->
-  <section id="bet">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">The bet</p>
-        <h2>One thesis, <span class="warm">two</span> <span class="cool">markets.</span></h2>
-        <p>Position NIAT graduates as AI-native junior FDEs (implementation, deployment, solutions) and place them where the AI-talent gap is structural. One supply engine, one proof gate, two demand pipelines.</p>
-      </div>
-      <div class="split">
-        <div class="col india reveal">
-          <p class="eyebrow warm">Volume + mission</p>
-          <h3>India</h3>
-          <p>Frictionless domestic hiring into GCC AI teams, on the founder's tier 2/3/4 thesis. No visa, no timezone, no permanent-establishment friction.</p>
-          <div class="share">~700 of 1,000 placements</div>
+      <div class="block reveal">
+        <p class="subeye orange">Who we work</p>
+        <div class="split">
+          <div class="col india">
+            <p class="eyebrow warm">Volume + mission</p>
+            <h3>India · GCC AI teams</h3>
+            <p>AI and data teams in Hyderabad, Bengaluru and Pune. The buyer is the engineering manager or head of AI, with talent acquisition as co-signer.</p>
+            <div class="share">~700 of 1,000 placements</div>
+          </div>
+          <div class="col us">
+            <p class="eyebrow">Margin + logos</p>
+            <h3>US · YC AI startups</h3>
+            <p>Seed to Series A, from the last three to four batches. The buyer is the founder or CTO. No procurement layer, fast yes.</p>
+            <div class="share">~300 of 1,000 placements</div>
+          </div>
         </div>
-        <div class="col us reveal">
-          <p class="eyebrow">Margin + logos</p>
-          <h3>United States</h3>
-          <p>India-based talent placed remotely at a fraction of US FDE cost. The arbitrage the India-only plan cannot make, plus marquee YC logos.</p>
-          <div class="share">~300 of 1,000 placements</div>
+        <div class="testbox">
+          <p class="big">The real-lead test</p>
+          <p>Work a lead only when two signals are both present: <b>an active hiring trigger</b> (a junior or FDE role posted in the last 60 days, or a raise in the last 90) and <b>a named person who can say yes</b>. No signal, no touch.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FUNNEL -->
-  <section id="funnel" class="alt">
+  <!-- SLIDE 2 : OPEN -->
+  <section id="open" class="slide alt">
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">The engine</p>
-        <h2>The partner <span class="cool">conversion funnel</span></h2>
-        <p>Illustrative 6-month targets.</p>
+        <p class="eyebrow">Slide 02 · Open</p>
+        <h2>Open the <span class="a-blue">pipeline</span></h2>
+        <p>Illustrative 6-month targets. Sourced accounts narrow to converting partners, then multiply back into placements. Warm first, then proof-led outbound.</p>
       </div>
-      <div class="funnel-grid">
-        <div class="reveal">
-          <svg id="funnelSvg" class="funnel-svg" viewBox="0 0 640 400" role="img" aria-label="Conversion funnel from 6,000 companies targeted to 325 converting partners">
+
+      <div class="funnel-grid reveal">
+        <div>
+          <svg id="funnelSvg" class="funnel-svg" viewBox="0 0 640 400" role="img" aria-label="Conversion funnel from 6,000 accounts sourced to 325 converting partners">
             <g class="fband" data-i="0">
-              <polygon points="30,30 320,30 280,86 70,86" fill="#1E3A63"/>
+              <polygon points="30,30 320,30 280,86 70,86" fill="#2743A8"/>
               <text class="fnum" x="350" y="54">6,000</text>
-              <text class="fdesc" x="350" y="76">Companies targeted</text>
+              <text class="fdesc" x="350" y="76">Accounts sourced</text>
             </g>
             <g class="fband" data-i="1">
-              <polygon points="70,96 280,96 250,152 100,152" fill="#3E6FC7"/>
+              <polygon points="70,96 280,96 250,152 100,152" fill="#3D6EF5"/>
               <text class="fpct" x="175" y="128" fill="#ffffff">35%</text>
               <text class="fnum" x="350" y="120">2,100</text>
-              <text class="fdesc" x="350" y="142">Connections accepted</text>
+              <text class="fdesc" x="350" y="142">Qualified: signal + buyer</text>
             </g>
             <g class="fband" data-i="2">
-              <polygon points="100,162 250,162 231,218 119,218" fill="#5F8AD8"/>
+              <polygon points="100,162 250,162 231,218 119,218" fill="#5E7BF9"/>
               <text class="fpct" x="175" y="194" fill="#ffffff">30%</text>
               <text class="fnum" x="350" y="186">630</text>
-              <text class="fdesc" x="350" y="208">Real conversations</text>
+              <text class="fdesc" x="350" y="208">Replied, in conversation</text>
             </g>
             <g class="fband" data-i="3">
-              <polygon points="119,228 231,228 221,284 129,284" fill="#86A9E2"/>
-              <text class="fpct" x="175" y="260" fill="#1E3A63">60%</text>
+              <polygon points="119,228 231,228 221,284 129,284" fill="#7C5CFC"/>
+              <text class="fpct" x="175" y="260" fill="#ffffff">60%</text>
               <text class="fnum" x="350" y="252">380</text>
-              <text class="fdesc" x="350" y="274">Proof sprints + interviews</text>
+              <text class="fdesc" x="350" y="274">Paid trial started</text>
             </g>
             <g class="fband" data-i="4">
-              <polygon points="129,294 221,294 213,350 137,350" fill="#AEC8EE"/>
-              <text class="fpct" x="175" y="326" fill="#1E3A63">85%</text>
+              <polygon points="129,294 221,294 213,350 137,350" fill="#AB92FF"/>
+              <text class="fpct" x="175" y="326" fill="#101E38">85%</text>
               <text class="fnum" x="350" y="318">325</text>
-              <text class="fdesc" x="350" y="340">Converting partners</text>
+              <text class="fdesc" x="350" y="340">Converting partner</text>
             </g>
           </svg>
         </div>
-        <div class="reveal">
-          <p class="fnarr">Sourced companies narrow to converting partners. Because a scaling GCC or startup takes more than one FDE, converting partners multiply back up into placements. The flywheel adds the rest to reach 1,000.</p>
+        <div>
+          <p class="fnarr">Once a partner runs a paid trial and a student ships real work, conversion is high because the work sells itself. One converting partner rarely hires just one.</p>
           <div class="multiply">
             <div class="lab">converting partners</div>
-            <div class="mline"><span class="big">325</span><span class="mm">× ~2.1 FDEs each</span></div>
+            <div class="mline"><span class="big">325</span><span class="mm">× ~2.1 students each</span></div>
             <div class="res">= ~690 placements</div>
+            <div class="mfoot">plus ~310 from the flywheel = 1,000</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block reveal">
+        <p class="subeye teal">The channels we open with</p>
+        <div class="bars">
+          <div class="bar">
+            <div class="top"><div class="name">Warm intros <span>network · OpenAI Academy · investors · alumni</span></div><div class="pct">40%</div></div>
+            <div class="track"><div class="fill blue" style="--w:40%"></div></div>
+            <p class="why">Highest reply rate by far. We exhaust these per account before any cold touch.</p>
+          </div>
+          <div class="bar">
+            <div class="top"><div class="name">LinkedIn <span>Sales Navigator</span></div><div class="pct">25%</div></div>
+            <div class="track"><div class="fill violet" style="--w:25%"></div></div>
+            <p class="why">A personalized note or voice message with a student build matched to their product.</p>
+          </div>
+          <div class="bar">
+            <div class="top"><div class="name">Email <span>warmed domains</span></div><div class="pct">20%</div></div>
+            <div class="track"><div class="fill orange" style="--w:20%"></div></div>
+            <p class="why">Clay-enriched, verified only. Roughly 30 to 40 a day per domain, three touches, then break.</p>
+          </div>
+          <div class="bar">
+            <div class="top"><div class="name">Co-branded hackathons <span>GCC clusters</span></div><div class="pct">15%</div></div>
+            <div class="track"><div class="fill teal" style="--w:15%"></div></div>
+            <p class="why">Where teams already recruit freshers and can watch students ship live.</p>
+          </div>
+        </div>
+        <div class="hookbox">
+          <p class="lab">The hook, in practice</p>
+          <p>"One of our students shipped an agentic support-triage tool in four days. 90-second demo here. Want them to build a proof of concept for your use case as a two-week paid trial?"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3 : CONVERT -->
+  <section id="convert" class="slide">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Slide 03 · Convert</p>
+        <h2>The engine that <span class="a-violet">compounds</span></h2>
+        <p>Named tools doing named jobs, and a loop where each placement makes the next one cheaper.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="subeye violet">What runs it</p>
+        <div class="bets">
+          <div class="bet blue"><span class="no">01</span><h3>Clay + a research agent</h3><p>Enriches accounts, scores ICP fit, detects the hiring and funding signals, verifies emails, and drafts the per-account opening line from the student's build and the company's product.</p></div>
+          <div class="bet violet"><span class="no">02</span><h3>Apollo + LinkedIn Sales Navigator</h3><p>Targeting and contact data for GCC engineering leaders, talent acquisition, and startup founders.</p></div>
+          <div class="bet orange"><span class="no">03</span><h3>Instantly / Smartlead</h3><p>Cold email infrastructure, domain warming, and the deliverability discipline that keeps the channel alive.</p></div>
+          <div class="bet teal"><span class="no">04</span><h3>Close + Loom</h3><p>Pipeline and follow-through, plus the 90-second build demo that does the actual selling.</p></div>
+        </div>
+        <div class="stack-note"><b>Where AI-native is literal:</b> agents do the research, scoring, and first-draft personalization at volume. Humans own the relationship and the close. That split is the point.</div>
+      </div>
+
+      <div class="block reveal">
+        <p class="subeye blue">Why it compounds</p>
+        <div class="fly-grid">
+          <div>
+            <p class="fly-narr">Cold outreach gets the first placements. Those students ship real work, which becomes case studies and warm founder referrals, which make every next placement faster and cheaper. By months 5 and 6 the flywheel carries roughly a third of volume on its own.</p>
+          </div>
+          <div>
+            <svg class="fly-svg" viewBox="0 0 600 460" role="img" aria-label="Conversion flywheel that spins continuously">
+              <defs>
+                <marker id="fah" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="var(--blue-soft)"/></marker>
+                <filter id="fs" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#101E38" flood-opacity="0.12"/></filter>
+              </defs>
+              <circle class="fly-ring" cx="300" cy="220" r="125"/>
+              <path class="fly-arc" d="M342.8 102.5 A125 125 0 0 1 417.5 177.3" marker-end="url(#fah)"/>
+              <path class="fly-arc" d="M417.5 262.8 A125 125 0 0 1 342.8 337.5" marker-end="url(#fah)"/>
+              <path class="fly-arc" d="M257.3 337.5 A125 125 0 0 1 182.5 262.8" marker-end="url(#fah)"/>
+              <path class="fly-arc" d="M182.5 177.3 A125 125 0 0 1 257.3 102.5" marker-end="url(#fah)"/>
+              <circle class="fly-sweep" cx="300" cy="220" r="125"/>
+
+              <circle cx="300" cy="220" r="54" fill="var(--card-2)" stroke="var(--line)"/>
+              <text class="fly-ctop" x="300" y="212">The</text>
+              <text class="fly-cmain" x="300" y="240">flywheel</text>
+
+              <text class="fly-label" x="300" y="30" text-anchor="middle">Place on a</text>
+              <text class="fly-label" x="300" y="48" text-anchor="middle">paid trial</text>
+              <text class="fly-label" x="478" y="214" text-anchor="start">Student ships</text>
+              <text class="fly-label" x="478" y="232" text-anchor="start">real work</text>
+              <text class="fly-label" x="300" y="410" text-anchor="middle">Case study</text>
+              <text class="fly-label" x="300" y="428" text-anchor="middle">+ reference</text>
+              <text class="fly-label" x="120" y="214" text-anchor="end">Warm referral</text>
+              <text class="fly-label" x="120" y="232" text-anchor="end">cuts the cost</text>
+
+              <g class="fly-node"><circle cx="300" cy="95" r="40" filter="url(#fs)"/><g transform="translate(300,95)"><path d="M-9 0 H7 M2 -6 L9 0 L2 6" fill="none" stroke="var(--blue)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+              <g class="fly-node"><circle cx="425" cy="220" r="40" filter="url(#fs)"/><g transform="translate(425,220)"><path d="M3 -11 L-6 2 L-1 2 L-4 11 L7 -3 L1 -3 Z" fill="var(--orange)"/></g></g>
+              <g class="fly-node"><circle cx="300" cy="345" r="40" filter="url(#fs)"/><g transform="translate(300,345)"><path d="M0 -11 L3.2 -3.4 L11 -3.4 L4.7 1.8 L7.1 9.6 L0 4.8 L-7.1 9.6 L-4.7 1.8 L-11 -3.4 L-3.2 -3.4 Z" fill="var(--violet)"/></g></g>
+              <g class="fly-node"><circle cx="175" cy="220" r="40" filter="url(#fs)"/><g transform="translate(175,220)"><path d="M8 -4 A9 9 0 1 0 9 2" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round"/><path d="M8 -4 L3 -5 M8 -4 L9 1" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+            </svg>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MARKETS -->
-  <section id="markets">
+  <!-- SLIDE 4 : EXECUTE -->
+  <section id="execute" class="slide alt">
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">Where we fish</p>
-        <h2>Priority <span class="warm">markets</span></h2>
-        <p>Sequenced by how fast each can absorb a pre-vetted, AI-native junior FDE. India-weighted by design.</p>
+        <p class="eyebrow">Slide 04 · Execute</p>
+        <h2>What it produces, and the <span class="a-orange">first 30 days</span></h2>
+        <p>Illustrative 6-month targets, then the on-the-ground plan for the first month.</p>
       </div>
-      <div class="bars">
-        <div class="bar reveal">
-          <div class="top"><div class="name">India · GCC AI teams <span>Hyderabad · Bengaluru · Tier 2</span></div><div class="pct">50%</div></div>
-          <div class="track"><div class="fill warm" style="--w:50%"></div></div>
-          <p class="why">2,120 GCCs, the #1 AI hiring market, a 38 to 42% skills gap, and freshers hired via hackathons and internships.</p>
-        </div>
-        <div class="bar reveal">
-          <div class="top"><div class="name">India · AI startups & services benches <span>Sarvam · Krutrim · Floworks · Coforge</span></div><div class="pct">20%</div></div>
-          <div class="track"><div class="fill warm" style="--w:20%"></div></div>
-          <p class="why">Last-mile deployment capacity without long senior searches; growing FDE benches.</p>
-        </div>
-        <div class="bar reveal">
-          <div class="top"><div class="name">US · YC AI startups <span>remote, via EOR / contractor</span></div><div class="pct">25%</div></div>
-          <div class="track"><div class="fill cool" style="--w:25%"></div></div>
-          <p class="why">Deepest FDE demand, ships over pedigree, and pays a fraction of US cost for India-based juniors.</p>
-        </div>
-        <div class="bar reveal">
-          <div class="top"><div class="name">Expansion · UK/EU, GCC-MENA <span>timezone + budget</span></div><div class="pct">5%</div></div>
-          <div class="track"><div class="fill cool" style="--w:5%"></div></div>
-          <p class="why">Dense AI ecosystems and high budgets; opened once the flywheel is turning.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- RAMP -->
-  <section id="ramp" class="alt">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">The trajectory</p>
-        <h2>Ramp to <span class="cool">1,000</span></h2>
-        <p>A proof pilot in months 1 to 2, then compounding to 1,000. Toggle the channel to see how India carries the volume and the US adds margin. Hover any point for the number.</p>
-      </div>
-      <div class="reveal">
+      <div id="ramp" class="reveal">
+        <p class="subeye teal">What the motion produces</p>
         <div class="seg" role="tablist" aria-label="Channel mix">
           <button class="on" data-series="all">All</button>
           <button data-series="india">India</button>
@@ -446,144 +440,34 @@
         </div>
         <div class="chanmix">
           <div class="key"><span class="dot" style="background:#2E4A73"></span>All channels</div>
-          <div class="key"><span class="dot" style="background:var(--warm)"></span>India (GCC-led)</div>
-          <div class="key"><span class="dot" style="background:var(--cool)"></span>US (remote)</div>
+          <div class="key"><span class="dot" style="background:var(--orange)"></span>India (GCC-led)</div>
+          <div class="key"><span class="dot" style="background:var(--blue)"></span>US (remote)</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- BETS -->
-  <section id="bets">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">What makes it win</p>
-        <h2>The four <span class="cool">big bets</span></h2>
-        <p>Ordered by leverage. These are what we discuss in the interview.</p>
-      </div>
-      <div class="bets">
-        <div class="bet reveal">
-          <span class="no">bet 01</span>
-          <h3>Open the FDE category, not another SDE funnel</h3>
-          <p>The whole field is fighting over commodity SDE placement. We sell a role none of them is built for, into AI-hungry buyers.</p>
-          <p class="win"><b>Why it wins:</b> uncontested lane, higher-value roles, and a demand gap that is structural rather than cyclical.</p>
-        </div>
-        <div class="bet warm reveal">
-          <span class="no">bet 02</span>
-          <h3>GCC pipeline + Hackathon-to-Hire</h3>
-          <p>A managed intern-to-hire pipeline for GCC AI teams, plus co-branded deployment hackathons, the exact channel GCCs already use to hire freshers.</p>
-          <p class="win"><b>Why it wins:</b> the biggest, warmest, frictionless buyer, and NxtWave sits inside its clusters.</p>
-        </div>
-        <div class="bet reveal">
-          <span class="no">bet 03</span>
-          <h3>Sell proof, not profiles</h3>
-          <p>Every candidate ships a documented agentic deployment against a realistic dataset, gated before anyone goes forward and shown at a Deployment Demo Day.</p>
-          <p class="win"><b>Why it wins:</b> it answers "can a fresher actually deploy" before the first call. A build beats a resume.</p>
-        </div>
-        <div class="bet warm reveal">
-          <span class="no">bet 04</span>
-          <h3>Partner-funded, zero employer risk</h3>
-          <p>US Bench-as-a-Service via EOR at a fraction of US FDE cost, with a replace-if-not-a-fit assurance. Partners pay, not students.</p>
-          <p class="win"><b>Why it wins:</b> predictable volume, no employer risk, and none of Masai's student-ISA fragility.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FLYWHEEL -->
-  <section id="flywheel" class="alt">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Why it compounds</p>
-        <h2>The placement <span class="cool">flywheel</span></h2>
-        <p>Each placement makes the next one easier. Outbound seeds it; referrals spin it.</p>
-      </div>
-      <div class="fly-grid">
-        <div class="reveal">
-          <p class="fly-narr">Cold outreach gets the first placements. Those students ship real work, which becomes case studies and warm founder referrals, which make every next placement faster and cheaper. By months 5 and 6 the flywheel carries roughly a third of volume on its own.</p>
-        </div>
-        <div class="reveal">
-          <svg class="fly-svg" viewBox="0 0 600 460" role="img" aria-label="Placement flywheel: place AI-native FDEs, they ship real work, case studies and referrals, next placement easier">
-            <defs>
-              <marker id="fah" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="var(--cool)"/></marker>
-              <filter id="fs" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#1E3A63" flood-opacity="0.12"/></filter>
-            </defs>
-            <circle class="fly-ring" cx="300" cy="220" r="125"/>
-            <path class="fly-arc" d="M342.8 102.5 A125 125 0 0 1 417.5 177.3" marker-end="url(#fah)"/>
-            <path class="fly-arc" d="M417.5 262.8 A125 125 0 0 1 342.8 337.5" marker-end="url(#fah)"/>
-            <path class="fly-arc" d="M257.3 337.5 A125 125 0 0 1 182.5 262.8" marker-end="url(#fah)"/>
-            <path class="fly-arc" d="M182.5 177.3 A125 125 0 0 1 257.3 102.5" marker-end="url(#fah)"/>
-
-            <circle cx="300" cy="220" r="54" fill="var(--card-2)" stroke="var(--line)"/>
-            <text class="fly-ctop" x="300" y="212">The</text>
-            <text class="fly-cmain" x="300" y="240">flywheel</text>
-
-            <text class="fly-label" x="300" y="30" text-anchor="middle">Place AI-native</text>
-            <text class="fly-label" x="300" y="48" text-anchor="middle">FDEs</text>
-            <text class="fly-label" x="478" y="214" text-anchor="start">They ship</text>
-            <text class="fly-label" x="478" y="232" text-anchor="start">real work</text>
-            <text class="fly-label" x="300" y="410" text-anchor="middle">Case studies</text>
-            <text class="fly-label" x="300" y="428" text-anchor="middle">+ referrals</text>
-            <text class="fly-label" x="120" y="214" text-anchor="end">Next placement</text>
-            <text class="fly-label" x="120" y="232" text-anchor="end">easier</text>
-
-            <g class="fly-node"><circle cx="300" cy="95" r="40" filter="url(#fs)"/><g transform="translate(300,95)"><path d="M-9 0 H7 M2 -6 L9 0 L2 6" fill="none" stroke="var(--cool)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></g>
-            <g class="fly-node"><circle cx="425" cy="220" r="40" filter="url(#fs)"/><g transform="translate(425,220)"><path d="M3 -11 L-6 2 L-1 2 L-4 11 L7 -3 L1 -3 Z" fill="var(--warm-soft)"/></g></g>
-            <g class="fly-node"><circle cx="300" cy="345" r="40" filter="url(#fs)"/><g transform="translate(300,345)"><path d="M0 -11 L3.2 -3.4 L11 -3.4 L4.7 1.8 L7.1 9.6 L0 4.8 L-7.1 9.6 L-4.7 1.8 L-11 -3.4 L-3.2 -3.4 Z" fill="var(--cool)"/></g></g>
-            <g class="fly-node"><circle cx="175" cy="220" r="40" filter="url(#fs)"/><g transform="translate(175,220)"><path d="M8 -4 A9 9 0 1 0 9 2" fill="none" stroke="var(--cool)" stroke-width="2.4" stroke-linecap="round"/><path d="M8 -4 L3 -5 M8 -4 L9 1" fill="none" stroke="var(--cool)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></g>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CREDIBILITY -->
-  <section id="cred">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">The hardest question, answered</p>
-        <h2>Why NIAT talent can <span class="cool">credibly</span> do this</h2>
-      </div>
-      <div class="cred">
-        <div class="reveal">
-          <p class="lead">An FDE is part engineer, part product operator, part customer strategist. NIAT already builds the engineering half. We add the customer half and a <em>hard proof gate</em>.</p>
-        </div>
-        <div class="reveal">
-          <p>The engineering half comes from an AI-native, project-based, build-first curriculum refreshed every six months, with an OpenAI Academy collaboration and hands-on agentic tooling.</p>
-          <p>The claim stays narrow, which is why it holds: not that a tier-2 fresher is a senior FDE, but that a screened junior who has demonstrably shipped an agentic build is exactly what a Series A startup or a GCC AI team needs for last-mile work, at a price the market cannot match. Not everyone clears the gate. That is the point.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROADMAP -->
-  <section id="roadmap" class="alt">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Execution</p>
-        <h2>The 6-month <span class="warm">roadmap</span></h2>
-        <p>A proof pilot in months 1 to 2, then compounding to 1,000. Cumulative figures are 6-month targets.</p>
-      </div>
-      <div class="road">
-        <div class="step reveal">
-          <div class="ph">Weeks 0 to 2</div><h4>Foundation</h4>
-          <p>Vetting bar, FDE-readiness sprint, proof-of-deployment gate, first GCC and startup accounts, EOR rails.</p>
-          <div class="count">setup<small>ready</small></div>
-        </div>
-        <div class="step reveal">
-          <div class="ph">Months 1 to 2</div><h4>Proof pilot</h4>
-          <p>Place the first cohort. Turn each into a case study and a referenceable employer.</p>
-          <div class="count" data-target="200" data-prefix="~">~200<small>placed</small></div>
-        </div>
-        <div class="step reveal">
-          <div class="ph">Months 3 to 4</div><h4>Scale</h4>
-          <p>GCC MOUs, pods, Hackathon-to-Hire, and the US remote layer switched on.</p>
-          <div class="count" data-target="550" data-prefix="~">~550<small>placed</small></div>
-        </div>
-        <div class="step reveal">
-          <div class="ph">Months 5 to 6</div><h4>Flywheel</h4>
-          <p>Referrals, conversions, Tier-2 depth and expansion carry the last third.</p>
-          <div class="count" data-target="1000">1,000<small>placed</small></div>
+      <div class="block reveal">
+        <p class="subeye orange">The first 30 days</p>
+        <div class="road">
+          <div class="step">
+            <div class="ph">Week 1</div><h4>Build the list</h4>
+            <p>GCC and YC accounts enriched and signal-scored in Clay. Lock the ICP and the disqualify rules.</p>
+            <span class="tag blue">list live</span>
+          </div>
+          <div class="step">
+            <div class="ph">Weeks 1 to 2</div><h4>Warm intros first</h4>
+            <p>Work the NxtWave network, OpenAI Academy, investors and alumni. Book meetings before any cold touch.</p>
+            <span class="tag violet">first meetings</span>
+          </div>
+          <div class="step">
+            <div class="ph">Weeks 2 to 3</div><h4>Proof-led outbound</h4>
+            <p>LinkedIn and warmed email with student build demos. Three touches, then break.</p>
+            <span class="tag orange">sequences live</span>
+          </div>
+          <div class="step">
+            <div class="ph">Weeks 3 to 4</div><h4>First paid trials</h4>
+            <p>Convert replies into two-week trials, line up a Demo Day, and ask every convert for a referral.</p>
+            <span class="tag teal">first trials</span>
+          </div>
         </div>
       </div>
     </div>
@@ -600,17 +484,15 @@
 (function(){
   var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // reveal
   var revs = document.querySelectorAll('.reveal');
   if(RM){revs.forEach(function(el){el.classList.add('in')});}
   else{
     var io = new IntersectionObserver(function(es){
       es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-    },{threshold:.14});
+    },{threshold:.12});
     revs.forEach(function(el){io.observe(el)});
   }
 
-  // count-up
   function countUp(el){
     var target = parseFloat(el.getAttribute('data-target'));
     var prefix = el.getAttribute('data-prefix')||'';
@@ -623,21 +505,17 @@
   var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp(e.target);io2.unobserve(e.target);}});},{threshold:.5});
   document.querySelectorAll('[data-target]').forEach(function(el){io2.observe(el)});
 
-  // market bars
-  var io3=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=getComputedStyle(e.target).getPropertyValue('--w');io3.unobserve(e.target);}});},{threshold:.5});
+  var io3=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=getComputedStyle(e.target).getPropertyValue('--w');io3.unobserve(e.target);}});},{threshold:.4});
   document.querySelectorAll('.fill').forEach(function(el){io3.observe(el)});
 
-  // RAMP CHART
   var CH={ months:[1,2,3,4,5,6],
     data:{ all:[60,200,380,550,780,1000], india:[55,170,300,410,560,700], us:[5,30,80,140,220,300] },
-    color:{all:'#2E4A73',india:'#C0781C',us:'#2F62DD'},
-    fill:{all:'rgba(46,74,115,.10)',india:'rgba(201,120,26,.12)',us:'rgba(47,98,221,.12)'} };
+    color:{all:'#2E4A73',india:'#F97316',us:'#3D6EF5'},
+    fill:{all:'rgba(46,74,115,.10)',india:'rgba(249,115,22,.12)',us:'rgba(61,110,245,.12)'} };
   var P={w:760,h:340,l:52,r:22,t:18,b:44};
   function xx(i){return P.l+(i/5)*(P.w-P.l-P.r);}
   function yy(v){return P.t+(1-v/1000)*(P.h-P.t-P.b);}
-  var current='all';
   function renderChart(key){
-    current=key;
     var svg=document.getElementById('chart'); if(!svg)return;
     var d=CH.data[key], col=CH.color[key], fl=CH.fill[key], out=[];
     [0,250,500,750,1000].forEach(function(v){ var y=yy(v);
@@ -664,24 +542,16 @@
     });
   });
   var rampSec=document.getElementById('ramp'), drawn=false;
-  var io4=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting && !drawn){ drawn=true; renderChart('all'); } });},{threshold:.25});
+  var io4=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting && !drawn){ drawn=true; renderChart('all'); } });},{threshold:.2});
   if(rampSec) io4.observe(rampSec); else renderChart('all');
 
-  // FUNNEL hover highlight
   var fsvg=document.getElementById('funnelSvg');
   if(fsvg){
     var fbands=fsvg.querySelectorAll('.fband');
     fbands.forEach(function(g){
-      g.addEventListener('mouseenter',function(){
-        fsvg.classList.add('dim');
-        fbands.forEach(function(b){b.classList.remove('active');});
-        g.classList.add('active');
-      });
+      g.addEventListener('mouseenter',function(){ fsvg.classList.add('dim'); fbands.forEach(function(b){b.classList.remove('active');}); g.classList.add('active'); });
     });
-    fsvg.addEventListener('mouseleave',function(){
-      fsvg.classList.remove('dim');
-      fbands.forEach(function(b){b.classList.remove('active');});
-    });
+    fsvg.addEventListener('mouseleave',function(){ fsvg.classList.remove('dim'); fbands.forEach(function(b){b.classList.remove('active');}); });
   }
 })();
 </script>
